@@ -16,6 +16,7 @@ html {
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --border-color: #ececec;
+  --hero-overlay-color: #2f303a;
 }
 
 body {
@@ -295,6 +296,20 @@ button {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
