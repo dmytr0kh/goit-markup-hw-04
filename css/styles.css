@@ -167,6 +167,9 @@ button {
   margin-left: auto;
 }
 
+.icon-envelop {
+}
+
 .nav-mail {
   display: block;
   font-weight: 500;
@@ -185,6 +188,8 @@ button {
 .nav-mail:focus {
   color: var(--main-text-color);
 }
+
+.icon-smartphone {}
 
 .nav-phone {
   display: block;
