@@ -17,6 +17,7 @@ html {
   --accent-color: #2196f3;
   --border-color: #ececec;
   --hero-overlay-color: #2f303a;
+  --clents-fill-color: #afb1b8;
 }
 
 body {
@@ -175,10 +176,12 @@ button {
 
 .icon-envelope:hover {
   fill: var(--accent-color);
+  color: #2196f3;
 }
 
 .icon-envelope:focus {
   fill: var(--accent-color);
+  color: #2196f3;
 }
 
 .nav-mail {
@@ -206,13 +209,13 @@ button {
   fill: var(--secondary-text-color);
 }
 
-.icon-smartphone:hover {
+/* .icon-smartphone:hover {
   fill: var(--accent-color);
 }
 
 .icon-smartphone:focus {
   fill: var(--accent-color);
-}
+} */
 
 .nav-phone {
   display: flex;
@@ -226,11 +229,13 @@ button {
   align-items: center;
 }
 
-.nav-phone:hover {
+.nav-phone:hover .icon-smartphone {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
-.nav-phone:focus {
+.nav-phone:focus .icon-smartphone {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -398,11 +403,21 @@ button {
 
 /* benefits  */
 
-.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut {
-  fill: var(--main-text-color);
+.icon-div {
+  padding: 25px 100px;
   margin-bottom: 30px;
+  border: 4px solid var(--third-page-color);
+  border-radius: 4px;
+  background-color: var(--third-page-color);
   align-items: center;
-  
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  display: flex;
+  fill: var(--main-text-color);
 }
 
 .benefits-list {
@@ -512,8 +527,22 @@ button {
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: center;
+}
+
+.team-social {
+  display: flex;
+  padding: 16px 32px 30px 32px;
+  justify-content: center;
+}
+
+.team-social:last-of-type {
+  margin-right: 0;
+}
+
+.team-item {
+  margin-right: 10px;
 }
 
 /* clients */
@@ -524,6 +553,45 @@ button {
   line-height: 1, 17;
   text-align: center;
   color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  cursor: pointer;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto; */
+  justify-content: center;
+}
+
+.clients-list:last-of-type {
+  margin-right: 0;
+}
+
+.client {
+  margin-right: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.client-link {
+  padding: 16px 32px;
+  display: flex;
+  border: 1px solid var(--clents-fill-color);
+  border-radius: 4px;
+}
+
+.icon-client-1,
+.icon-client-2,
+.icon-client-3,
+.icon-client-4,
+.icon-client-5,
+.icon-client-6 {
+  fill: var(--clents-fill-color);
 }
 
 /* portfolio.html  */
