@@ -413,6 +413,7 @@ button {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button:focus {
@@ -421,6 +422,7 @@ button {
   border: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* benefits  */
@@ -693,7 +695,6 @@ button {
   display: block;
 }
 
-
 .project-box {
   display: block;
   max-width: 370px;
@@ -702,7 +703,8 @@ button {
   /* flex-basis: calc((100% - 20px) / 3); */
 }
 
-.project-box:hover, .project-box:focus {
+.project-box:hover,
+.project-box:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
