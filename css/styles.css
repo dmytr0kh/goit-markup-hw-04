@@ -171,17 +171,6 @@ button {
 
 .icon-envelope {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
-}
-
-.icon-envelope:hover {
-  fill: var(--accent-color);
-  color: #2196f3;
-}
-
-.icon-envelope:focus {
-  fill: var(--accent-color);
-  color: #2196f3;
 }
 
 .nav-mail {
@@ -194,28 +183,22 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  fill: var(--secondary-text-color);
 }
 
 .nav-mail:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .nav-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .icon-smartphone {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
 }
-
-/* .icon-smartphone:hover {
-  fill: var(--accent-color);
-}
-
-.icon-smartphone:focus {
-  fill: var(--accent-color);
-} */
 
 .nav-phone {
   display: flex;
@@ -227,16 +210,17 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  fill: var(--secondary-text-color);
 }
 
-.nav-phone:hover .icon-smartphone {
-  fill: var(--accent-color);
+.nav-phone:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.nav-phone:focus .icon-smartphone {
-  fill: var(--accent-color);
+.nav-phone:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* footer */
@@ -247,11 +231,8 @@ button {
   padding-bottom: 60px;
 }
 
-.social-title {
-  font-size: 700;
-  line-height: 1.14;
-  text-align: left;
-  color: var(--main-page-color);
+.floor {
+  display: flex;
 }
 
 .floor-logo {
@@ -326,6 +307,46 @@ button {
 
 .floor-phone:focus {
   color: var(--secondary-text-color);
+}
+
+.social-links {
+  display: inline-block;
+  padding-top: 12px;
+  padding-left: 70px;
+  padding-right: 0;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  padding-left: 0;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  color: var(--main-page-color);
+  margin-bottom: 20px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-page-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+  fill: var(--main-page-color);
+  background-color: var(--accent-color);
 }
 
 /* index.html  */
@@ -537,12 +558,29 @@ button {
   justify-content: center;
 }
 
-.team-social:last-of-type {
+/* .team-social:last-of-type {
   margin-right: 0;
-}
+} */
 
 .team-item {
-  margin-right: 10px;
+  gap: 10px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--clents-fill-color);
+  background-color: var(--main-page-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--main-page-color);
+  background-color: var(--accent-color);
 }
 
 /* clients */
@@ -562,15 +600,12 @@ button {
   /* margin-left: auto;
   margin-right: auto; */
   justify-content: center;
+  gap: 30px;
 }
 
-.clients-list:last-of-type {
+/* .clients-list:last-of-type {
   margin-right: 0;
-}
-
-.client {
-  margin-right: 30px;
-}
+} */
 
 .client-link:hover,
 .client-link:focus {
@@ -583,14 +618,6 @@ button {
   display: flex;
   border: 1px solid var(--clents-fill-color);
   border-radius: 4px;
-}
-
-.icon-client-1,
-.icon-client-2,
-.icon-client-3,
-.icon-client-4,
-.icon-client-5,
-.icon-client-6 {
   fill: var(--clents-fill-color);
 }
 
@@ -635,12 +662,16 @@ button {
   color: var(--main-page-color);
   background-color: var(--accent-color);
   border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .project-btn:focus {
   color: var(--main-page-color);
   background-color: var(--accent-color);
   border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .projects-list {
@@ -656,6 +687,11 @@ button {
   margin-bottom: 30px;
   margin-right: 30px;
   /* flex-basis: calc((100% - 20px) / 3); */
+}
+
+.project-box:hover {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .project-box:nth-child(3n) {
