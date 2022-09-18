@@ -535,6 +535,7 @@ button {
 
 .project-link {
   display: block;
+  text-decoration: none;
 }
 
 .project-link:hover,
@@ -555,7 +556,7 @@ button {
   margin-right: 0;
 }
 
-.project-box:nth-child(n+7) {
+.project-box:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
