@@ -147,12 +147,9 @@ button {
   padding-bottom: 32px;
 }
 
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
+.nav-link:hover,
 .nav-link:focus {
-  color: var(--main-text-color);
+  color: var(--accent-color);
 }
 
 .link-current {
@@ -627,19 +624,16 @@ button {
   margin-bottom: 0;
 }
 
-.address-title {
+.location {
   font-style: normal;
   line-height: 1.71;
   color: var(--main-page-color);
   text-decoration: none;
 }
 
-.location:hover {
-  color: var(--accent-color);
-}
-
+.location:hover,
 .location:focus {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 .footer-mail {
@@ -649,12 +643,9 @@ button {
   text-decoration: none;
 }
 
-.footer-mail:hover {
-  color: var(--accent-color);
-}
-
+.footer-mail:hover,
 .footer-mail:focus {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 .footer-phone {
@@ -664,12 +655,9 @@ button {
   text-decoration: none;
 }
 
-.footer-phone:hover {
-  color: var(--accent-color);
-}
-
+.footer-phone:hover,
 .floor-phone:focus {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 .social-div {
