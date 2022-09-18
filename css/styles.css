@@ -625,10 +625,10 @@ button {
 }
 
 .location {
+  text-decoration: none;
   font-style: normal;
   line-height: 1.71;
   color: var(--main-page-color);
-  text-decoration: none;
 }
 
 .location:hover,
