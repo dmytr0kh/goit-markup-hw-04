@@ -462,8 +462,7 @@ button {
 .client-link {
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
-  display: block;
+  display: flex;
   border: 1px solid var(--clents-fill-color);
   border-radius: 4px;
   fill: var(--clents-fill-color);
